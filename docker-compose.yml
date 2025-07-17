@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: nutribianca-db
+    environment:
+      POSTGRES_DB: nutribianca
+      POSTGRES_USER: nutribianca
+      POSTGRES_PASSWORD: nutribianca_dev_2025
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nutribianca"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    container_name: nutribianca-api
+    environment:
+      DATABASE_URL: postgresql://nutribianca:nutribianca_dev_2025@db:5432/nutribianca
+      PORT: 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./apps/api:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: deno task dev
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: nutribianca-web
+    environment:
+      VITE_API_URL: http://localhost:8000
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+    command: pnpm dev --host
+
+volumes:
+  postgres_data:

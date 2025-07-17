@@ -43,3 +43,83 @@ Botón WhatsApp → https://wa.me/50432177256
 - Verde: #5BBF7A, Naranja: #FFB36B
 - Tipografía: Inter (16px base, escala 1.25)
 - Bordes: 8px radius
+
+## Entorno de Desarrollo (Paso 3)
+
+### WSL 2 + Ubuntu 24.04
+- ✅ WSL2 con kernel Linux 6.6.87.2-microsoft-standard-WSL2
+- ✅ Ubuntu 24.04.2 LTS funcionando
+
+### Herramientas Instaladas
+- ✅ **Git:** Configurado con Omar Oseguera <osegdev@ejemplo.com>
+- ✅ **Node.js:** v22.17.0 + npm 10.9.2 + pnpm 10.13.1
+- ✅ **Deno:** v2.3.7 (stable) + TypeScript 5.8.3
+- ✅ **Docker:** v28.0.4 con integración WSL2
+- ✅ **Dev Tools:** ripgrep v14.1.1, fzf 0.44.1, batcat 0.24.0, direnv 2.32.1
+- ✅ **mkcert:** v1.4.4 (TLS local)
+
+### Setup Automatizado
+```bash
+# Ejecutar configuración completa
+./scripts/dev-setup.sh
+
+# Verificar entorno
+docker run hello-world
+deno --version && node --version
+```
+
+### Archivos Creados
+- `scripts/dev-setup.sh` - Setup automatizado
+- `docs/setup/wsl2-guide.md` - Guía detallada
+- `docs/architecture/adr/0002-env-tooling.md` - Decisiones técnicas
+
+## Bootstrap Monorepo (Paso 5)
+
+### Estructura TurboRepo
+- ✅ **Workspace:** pnpm + TurboRepo configurado
+- ✅ **Apps:** React web + Deno API con health check
+- ✅ **Packages:** UI (Button) + schemas (Zod)
+
+### Aplicaciones
+- ✅ **Web (localhost:5173):** React + Vite + TailwindCSS + "Hello NutriBianca 👋"
+- ✅ **API (localhost:8000):** Deno + Oak + /health endpoint
+- ✅ **Database:** PostgreSQL + Prisma (Patient/Appointment/EpigenTest)
+
+### Desarrollo
+- ✅ **Docker Compose:** db + api + web con hot-reload
+- ✅ **Makefile:** `make dev`, `make db-up`, `make test`, etc.
+- ✅ **Environment:** .env configurado con WhatsApp URL
+
+### Tooling Completado
+- ✅ **Testing:** Vitest (web) + Deno test (api) configurado
+- ✅ **Linting:** ESLint/Prettier centralizados en packages/config
+- ✅ **Storybook:** UI Button documentado en localhost:6006
+
+### Comandos Rápidos
+```bash
+# Desarrollo
+make dev              # Todo (db + web + api)
+make dev-web          # Solo React (localhost:5173)
+make dev-api          # Solo Deno API (localhost:8000)
+make db-up            # Solo PostgreSQL
+
+# Testing & Quality
+pnpm test             # Tests (Vitest + Deno)
+pnpm lint             # ESLint
+pnpm format           # Prettier
+pnpm storybook        # Storybook (localhost:6006)
+
+# Build
+pnpm build            # Build todas las apps
+```
+
+## Estado Paso 5: ✅ COMPLETADO
+
+**Bootstrap monorepo 100% funcional:**
+- TurboRepo + workspaces + tooling completo
+- Web app con TailwindCSS + "Hello NutriBianca 👋"
+- API Deno con /health endpoint  
+- UI components + Storybook
+- Testing (Vitest + Deno test)
+- Linting centralizados
+- Docker + Makefile + .env
