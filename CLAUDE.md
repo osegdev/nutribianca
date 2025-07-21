@@ -81,7 +81,7 @@ deno --version && node --version
 - ✅ **Packages:** UI (Button) + schemas (Zod)
 
 ### Aplicaciones
-- ✅ **Web (localhost:5173):** React + Vite + TailwindCSS + "Hello NutriBianca 👋"
+- ✅ **Web (localhost:5174):** React + Vite + TailwindCSS v3.4.15 + Landing completa
 - ✅ **API (localhost:8000):** Deno + Oak + /health endpoint
 - ✅ **Database:** PostgreSQL + Prisma (Patient/Appointment/EpigenTest)
 
@@ -99,7 +99,7 @@ deno --version && node --version
 ```bash
 # Desarrollo
 make dev              # Todo (db + web + api)
-make dev-web          # Solo React (localhost:5173)
+make dev-web          # Solo React (localhost:5174)
 make dev-api          # Solo Deno API (localhost:8000)
 make db-up            # Solo PostgreSQL
 
@@ -123,3 +123,38 @@ pnpm build            # Build todas las apps
 - Testing (Vitest + Deno test)
 - Linting centralizados
 - Docker + Makefile + .env
+
+## Landing Nutrición Clínica (Paso 6): ✅ COMPLETADO
+
+### Implementación Completa
+- ✅ **React Router:** Configurado con página NutritionClinic como ruta principal
+- ✅ **Componentes UI:** Hero, Benefits, Process, Testimonials en packages/ui
+- ✅ **Contenido:** Copy con mensajes "Santa Rosa de Copán y online"
+- ✅ **CTA WhatsApp:** Botón principal → https://wa.me/50432177256
+
+### Secciones Landing
+- ✅ **Hero:** "Tu salud, guiada por la evidencia" + CTA WhatsApp
+- ✅ **Beneficios:** Planes clínicos, seguimiento WhatsApp, educación científica
+- ✅ **Proceso:** 3 pasos (evaluación, plan, seguimiento)
+- ✅ **Testimonios:** Placeholder con 3 testimonios de pacientes
+
+### Calidad & Testing
+- ✅ **SEO:** Meta tags, Open Graph, Twitter Cards configurados
+- ✅ **Testing:** 8 tests unitarios pasando (Vitest + React Testing Library)
+- ✅ **Storybook:** Stories para Hero y Benefits components
+- ✅ **Responsive:** TailwindCSS grid system, mobile-first
+- ✅ **A11y:** aria-labels, contraste verificado, navegación accesible
+
+### Archivos Creados
+```
+apps/web/src/
+├── pages/NutritionClinic.tsx        # Página principal
+├── pages/NutritionClinic.test.tsx   # Tests unitarios
+└── content/nutrition/home.md        # Contenido landing
+
+packages/ui/src/
+├── Hero.tsx + Hero.stories.tsx      # Componente hero
+├── Benefits.tsx + Benefits.stories.tsx
+├── Process.tsx
+└── Testimonials.tsx
+```
