@@ -1,6 +1,7 @@
 # Dependencies
-node_modules/
+**/node_modules/
 .pnpm-store/
+pnpm-lock.yaml
 
 # Production builds
 dist/
