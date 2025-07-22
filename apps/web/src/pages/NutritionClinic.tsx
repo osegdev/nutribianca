@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Hero, Benefits, Process, Testimonials } from '@nutribianca/ui';
 import type { Benefit, ProcessStep, Testimonial } from '@nutribianca/ui';
+import { Navigation } from '../components/Navigation';
 
 const benefits: Benefit[] = [
   {
@@ -92,6 +93,8 @@ export const NutritionClinic: React.FC = () => {
         <meta name="twitter:description" content="Consultas nutricionales en Santa Rosa de Copán y online." />
       </Helmet>
 
+      <Navigation />
+      
       <main>
         <Hero
           headline="Tu salud, guiada por la evidencia"

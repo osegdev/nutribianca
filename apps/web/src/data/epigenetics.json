@@ -1,0 +1,135 @@
+{
+  "plans": [
+    {
+      "id": "essential",
+      "title": "Essential",
+      "subtitle": "Básico",
+      "price": "L. 2,500",
+      "originalPrice": null,
+      "description": "Ideal para iniciar tu viaje epigenético",
+      "features": [
+        "Análisis nutricional básico (30 marcadores)",
+        "Identificación de intolerancias alimentarias", 
+        "Plan alimentario personalizado básico",
+        "Guía de macronutrientes",
+        "Reporte digital detallado"
+      ],
+      "popular": false,
+      "cta": "Consultar vía WhatsApp"
+    },
+    {
+      "id": "wellness", 
+      "title": "Wellness",
+      "subtitle": "Completo",
+      "price": "L. 4,200",
+      "originalPrice": "L. 5,000",
+      "description": "Ideal para optimización integral de salud",
+      "features": [
+        "Todo lo incluido en Essential",
+        "Análisis metabólico completo (60 marcadores)",
+        "Recomendaciones de suplementación",
+        "Plan de actividad física personalizado",
+        "Seguimiento nutricional mensual x3 meses",
+        "Consulta de seguimiento incluida"
+      ],
+      "popular": true,
+      "cta": "Consultar vía WhatsApp"
+    },
+    {
+      "id": "beauty",
+      "title": "Beauty", 
+      "subtitle": "Piel y Cabello",
+      "price": "L. 5,800",
+      "originalPrice": null,
+      "description": "Ideal para belleza desde adentro",
+      "features": [
+        "Todo lo incluido en Wellness",
+        "Análisis específico piel y cabello (90 marcadores)",
+        "Rutina de cuidado personalizada",
+        "Protocolo nutricional antienvejecimiento",
+        "Recomendaciones cosméticos biocompatibles",
+        "Seguimiento especializado x6 meses"
+      ],
+      "popular": false,
+      "cta": "Consultar vía WhatsApp"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "what-is-epigenetics",
+      "question": "¿Qué es la epigenética?",
+      "answer": "La epigenética estudia cómo tu ambiente y estilo de vida influyen en la expresión de tus genes. A diferencia de la genética tradicional, la epigenética puede cambiar y es modificable a través de la nutrición, ejercicio y hábitos de vida."
+    },
+    {
+      "id": "hair-sample",
+      "question": "¿Cómo se toma la muestra de cabello?",
+      "answer": "Es muy simple: cortas aproximadamente 100 cabellos desde la raíz (zona occipital) usando las tijeras incluidas en el kit. El cabello debe tener mínimo 3cm de largo y haber crecido en los últimos 3 meses. Te enviamos instrucciones detalladas paso a paso."
+    },
+    {
+      "id": "results-time",
+      "question": "¿Cuánto demoran los resultados?",
+      "answer": "El análisis completo toma 7 días hábiles desde que recibimos tu muestra en el laboratorio certificado. Recibes tu reporte detallado por email y programamos una consulta de explicación personalizada sin costo adicional."
+    },
+    {
+      "id": "vs-genetic-test", 
+      "question": "¿Es lo mismo que un test genético tradicional?",
+      "answer": "No. Los tests genéticos analizan tu ADN (que no cambia durante tu vida), mientras que la epigenética analiza cómo tus genes se expresan actualmente según tu estilo de vida, nutrición y ambiente. Es información más práctica y modificable."
+    },
+    {
+      "id": "includes-followup",
+      "question": "¿Incluye seguimiento nutricional?",
+      "answer": "Los planes Wellness y Beauty incluyen seguimiento mensual durante 3-6 meses respectivamente con la nutricionista Bianca. El plan Essential puede agregar seguimiento por separado. Todos los planes incluyen una consulta inicial de explicación."
+    },
+    {
+      "id": "available-locations",
+      "question": "¿Dónde está disponible el servicio?",
+      "answer": "Ofrecemos consultas presenciales en Santa Rosa de Copán y modalidad online para todo Honduras y Centroamérica. El kit de muestra se envía a cualquier dirección dentro de Honduras sin costo adicional."
+    }
+  ],
+  "steps": [
+    {
+      "id": "sample",
+      "title": "Toma una muestra de cabello",
+      "description": "Kit de recolección enviado a tu domicilio con instrucciones detalladas. Proceso simple de 5 minutos.",
+      "icon": "✂️"
+    },
+    {
+      "id": "analysis", 
+      "title": "Análisis en laboratorio certificado",
+      "description": "Tecnología de última generación analiza más de 90 marcadores epigenéticos relacionados con nutrición y metabolismo.",
+      "icon": "🔬"
+    },
+    {
+      "id": "results",
+      "title": "Recibe tu reporte y plan nutricional", 
+      "description": "Reporte personalizado con recomendaciones específicas de alimentación, suplementación y estilo de vida.",
+      "icon": "📊"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "maria-jose",
+      "name": "María José",
+      "age": 34,
+      "location": "Santa Rosa de Copán",
+      "testimonial": "Desde que conocí mi perfil epigenético, mi relación con la comida cambió completamente. Finalmente entiendo qué necesita mi cuerpo.",
+      "plan": "Wellness"
+    },
+    {
+      "id": "carlos-andrade", 
+      "name": "Carlos Andrade",
+      "age": 29,
+      "location": "Tegucigalpa (Online)",
+      "testimonial": "Los resultados fueron súper específicos. Ahora sé exactamente qué suplementos tomar y cuáles evitar.",
+      "plan": "Essential"
+    },
+    {
+      "id": "andrea-soto",
+      "name": "Andrea Soto", 
+      "age": 42,
+      "location": "San Pedro Sula (Online)",
+      "testimonial": "Mi piel mejoró notablemente siguiendo las recomendaciones del reporte Beauty. Vale cada peso invertido.",
+      "plan": "Beauty"
+    }
+  ]
+}
