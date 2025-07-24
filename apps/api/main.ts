@@ -1,13 +1,13 @@
-import { Application, Router } from "@oak/oak";
+import { Application, Router } from '@oak/oak';
 
 const router = new Router();
 
 // Health check endpoint
-router.get("/health", (ctx) => {
+router.get('/health', ctx => {
   ctx.response.body = {
-    status: "UP",
+    status: 'UP',
     timestamp: new Date().toISOString(),
-    service: "nutribianca-api"
+    service: 'nutribianca-api',
   };
 });
 

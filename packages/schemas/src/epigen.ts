@@ -4,15 +4,19 @@ export const epigenTestSchema = z.object({
   id: z.string().uuid().optional(),
   patientId: z.string().uuid(),
   testType: z.enum(['basic', 'advanced', 'premium']),
-  testStatus: z.enum(['ordered', 'sample_collected', 'processing', 'completed', 'cancelled']).default('ordered'),
+  testStatus: z
+    .enum(['ordered', 'sample_collected', 'processing', 'completed', 'cancelled'])
+    .default('ordered'),
   sampleType: z.enum(['saliva', 'blood']).default('saliva'),
-  results: z.object({
-    metabolicType: z.string().optional(),
-    recommendedNutrients: z.array(z.string()).optional(),
-    foodSensitivities: z.array(z.string()).optional(),
-    exerciseType: z.enum(['cardio', 'strength', 'mixed']).optional(),
-    detoxCapacity: z.enum(['low', 'medium', 'high']).optional(),
-  }).optional(),
+  results: z
+    .object({
+      metabolicType: z.string().optional(),
+      recommendedNutrients: z.array(z.string()).optional(),
+      foodSensitivities: z.array(z.string()).optional(),
+      exerciseType: z.enum(['cardio', 'strength', 'mixed']).optional(),
+      detoxCapacity: z.enum(['low', 'medium', 'high']).optional(),
+    })
+    .optional(),
   reportUrl: z.string().url().optional(),
   orderDate: z.date().default(() => new Date()),
   completedDate: z.date().optional(),

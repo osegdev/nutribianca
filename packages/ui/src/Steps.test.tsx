@@ -8,20 +8,20 @@ describe('Steps Component', () => {
       id: 'step1',
       title: 'Step 1',
       description: 'Description 1',
-      icon: '🔥'
+      icon: '🔥',
     },
     {
-      id: 'step2', 
+      id: 'step2',
       title: 'Step 2',
       description: 'Description 2',
-      icon: '⚡'
+      icon: '⚡',
     },
     {
       id: 'step3',
-      title: 'Step 3', 
+      title: 'Step 3',
       description: 'Description 3',
-      icon: '🎯'
-    }
+      icon: '🎯',
+    },
   ];
 
   it('renders default title and subtitle', () => {

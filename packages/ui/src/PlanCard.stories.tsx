@@ -26,7 +26,7 @@ export const Essential: Story = {
       'Identificación de intolerancias alimentarias',
       'Plan alimentario personalizado básico',
       'Guía de macronutrientes',
-      'Reporte digital detallado'
+      'Reporte digital detallado',
     ],
     popular: false,
   },
@@ -45,7 +45,7 @@ export const Wellness: Story = {
       'Recomendaciones de suplementación',
       'Plan de actividad física personalizado',
       'Seguimiento nutricional mensual x3 meses',
-      'Consulta de seguimiento incluida'
+      'Consulta de seguimiento incluida',
     ],
     popular: true,
   },
@@ -63,7 +63,7 @@ export const Beauty: Story = {
       'Rutina de cuidado personalizada',
       'Protocolo nutricional antienvejecimiento',
       'Recomendaciones cosméticos biocompatibles',
-      'Seguimiento especializado x6 meses'
+      'Seguimiento especializado x6 meses',
     ],
     popular: false,
   },

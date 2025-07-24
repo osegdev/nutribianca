@@ -11,22 +11,31 @@ export const Epigenetics: React.FC = () => {
     <>
       <Helmet>
         <title>Pruebas Epigenéticas | NutriBianca - Nutrición Personalizada</title>
-        <meta 
-          name="description" 
-          content="Descubre qué dice tu epigenética sobre tu salud. Prueba no invasiva a partir de cabello, resultados en 7 días. Disponible en Santa Rosa de Copán y online." 
+        <meta
+          name="description"
+          content="Descubre qué dice tu epigenética sobre tu salud. Prueba no invasiva a partir de cabello, resultados en 7 días. Disponible en Santa Rosa de Copán y online."
         />
-        <meta name="keywords" content="epigenética, nutrición personalizada, pruebas cabello, Santa Rosa de Copán, Honduras" />
-        
+        <meta
+          name="keywords"
+          content="epigenética, nutrición personalizada, pruebas cabello, Santa Rosa de Copán, Honduras"
+        />
+
         {/* Open Graph */}
         <meta property="og:title" content="Pruebas Epigenéticas | NutriBianca" />
-        <meta property="og:description" content="Descubre qué dice tu epigenética sobre tu salud. Prueba no invasiva a partir de cabello, resultados en 7 días." />
+        <meta
+          property="og:description"
+          content="Descubre qué dice tu epigenética sobre tu salud. Prueba no invasiva a partir de cabello, resultados en 7 días."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nutribianca.com/epigenetica" />
-        
+
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Pruebas Epigenéticas | NutriBianca" />
-        <meta name="twitter:description" content="Descubre qué dice tu epigenética sobre tu salud. Prueba no invasiva a partir de cabello, resultados en 7 días." />
+        <meta
+          name="twitter:description"
+          content="Descubre qué dice tu epigenética sobre tu salud. Prueba no invasiva a partir de cabello, resultados en 7 días."
+        />
       </Helmet>
 
       <Navigation />
@@ -49,7 +58,8 @@ export const Epigenetics: React.FC = () => {
               ¿Por qué elegir nuestras pruebas epigenéticas?
             </h2>
             <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-              Tu perfil epigenético único revela cómo tu cuerpo procesa nutrientes, metaboliza grasas y responde al estrés.
+              Tu perfil epigenético único revela cómo tu cuerpo procesa nutrientes, metaboliza
+              grasas y responde al estrés.
             </p>
           </div>
 
@@ -59,7 +69,9 @@ export const Epigenetics: React.FC = () => {
                 <span className="text-2xl">🧬</span>
               </div>
               <h3 className="font-bold text-neutral-900 mb-2">Personalización Científica</h3>
-              <p className="text-neutral-600 text-sm">Cada cuerpo es único. Tu epigenética revela exactamente qué necesitas.</p>
+              <p className="text-neutral-600 text-sm">
+                Cada cuerpo es único. Tu epigenética revela exactamente qué necesitas.
+              </p>
             </div>
 
             <div className="text-center">
@@ -67,7 +79,9 @@ export const Epigenetics: React.FC = () => {
                 <span className="text-2xl">✂️</span>
               </div>
               <h3 className="font-bold text-neutral-900 mb-2">No Invasivo</h3>
-              <p className="text-neutral-600 text-sm">Solo una muestra de cabello desde la comodidad de tu hogar.</p>
+              <p className="text-neutral-600 text-sm">
+                Solo una muestra de cabello desde la comodidad de tu hogar.
+              </p>
             </div>
 
             <div className="text-center">
@@ -75,7 +89,9 @@ export const Epigenetics: React.FC = () => {
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="font-bold text-neutral-900 mb-2">Resultados Rápidos</h3>
-              <p className="text-neutral-600 text-sm">Análisis completo en laboratorio certificado, resultados en 7 días.</p>
+              <p className="text-neutral-600 text-sm">
+                Análisis completo en laboratorio certificado, resultados en 7 días.
+              </p>
             </div>
 
             <div className="text-center">
@@ -83,18 +99,16 @@ export const Epigenetics: React.FC = () => {
                 <span className="text-2xl">🤝</span>
               </div>
               <h3 className="font-bold text-neutral-900 mb-2">Complemento Nutricional</h3>
-              <p className="text-neutral-600 text-sm">Se integra perfectamente con tu consulta nutricional clínica.</p>
+              <p className="text-neutral-600 text-sm">
+                Se integra perfectamente con tu consulta nutricional clínica.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Steps Section */}
-      <Steps
-        steps={steps}
-        title="¿Cómo funciona?"
-        subtitle="Proceso simple en 3 pasos"
-      />
+      <Steps steps={steps} title="¿Cómo funciona?" subtitle="Proceso simple en 3 pasos" />
 
       {/* Plans Section */}
       <section className="py-16 px-4 bg-white">
@@ -109,7 +123,7 @@ export const Epigenetics: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {plans.map((plan) => (
+            {plans.map(plan => (
               <PlanCard
                 key={plan.id}
                 title={plan.title}
@@ -140,18 +154,22 @@ export const Epigenetics: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {testimonials.map((testimonial) => (
+            {testimonials.map(testimonial => (
               <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md">
                 <div className="mb-4">
                   <div className="flex text-secondary-400 mb-3">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-lg">★</span>
+                      <span key={i} className="text-lg">
+                        ★
+                      </span>
                     ))}
                   </div>
                   <p className="text-neutral-700 italic mb-4">"{testimonial.testimonial}"</p>
                 </div>
                 <div className="border-t pt-4">
-                  <p className="font-bold text-neutral-900">{testimonial.name}, {testimonial.age} años</p>
+                  <p className="font-bold text-neutral-900">
+                    {testimonial.name}, {testimonial.age} años
+                  </p>
                   <p className="text-sm text-neutral-600">{testimonial.location}</p>
                   <p className="text-sm text-primary-600 font-medium">Plan {testimonial.plan}</p>
                 </div>
@@ -175,7 +193,8 @@ export const Epigenetics: React.FC = () => {
             ¿Listo para descubrir tu perfil epigenético único?
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Agenda tu consulta inicial y conoce cómo la epigenética puede transformar tu salud desde la raíz.
+            Agenda tu consulta inicial y conoce cómo la epigenética puede transformar tu salud desde
+            la raíz.
           </p>
           <Button
             href="https://wa.me/50432177256"
@@ -192,11 +211,13 @@ export const Epigenetics: React.FC = () => {
       <section className="py-8 px-4 bg-gray-100">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-sm text-neutral-600">
-            <strong>Importante:</strong> La prueba epigenética es un complemento nutricional y no sustituye el diagnóstico médico profesional. 
-            Los resultados deben interpretarse junto con un profesional de la nutrición calificado.
+            <strong>Importante:</strong> La prueba epigenética es un complemento nutricional y no
+            sustituye el diagnóstico médico profesional. Los resultados deben interpretarse junto
+            con un profesional de la nutrición calificado.
           </p>
           <p className="text-sm text-neutral-600 mt-2">
-            <strong>Disponibilidad:</strong> Servicio disponible en Santa Rosa de Copán y modalidad online para todo Honduras y Centroamérica.
+            <strong>Disponibilidad:</strong> Servicio disponible en Santa Rosa de Copán y modalidad
+            online para todo Honduras y Centroamérica.
           </p>
         </div>
       </section>

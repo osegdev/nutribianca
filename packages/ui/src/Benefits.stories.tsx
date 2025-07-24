@@ -18,20 +18,20 @@ const defaultBenefits = [
     id: 'clinical-plans',
     title: 'Planes clínicos adaptados',
     description: 'Nutrición basada en evidencia científica adaptada a tu condición específica',
-    icon: '🎯'
+    icon: '🎯',
   },
   {
     id: 'whatsapp-follow',
     title: 'Seguimiento cercano vía WhatsApp',
     description: 'Acompañamiento continuo y resolución de dudas en tiempo real',
-    icon: '💬'
+    icon: '💬',
   },
   {
     id: 'science-education',
     title: 'Educación basada en ciencia',
     description: 'Aprende sobre alimentación con información respaldada por investigación',
-    icon: '🔬'
-  }
+    icon: '🔬',
+  },
 ];
 
 export const Default: Story = {

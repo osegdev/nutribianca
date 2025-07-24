@@ -9,7 +9,7 @@
       "description": "Ideal para iniciar tu viaje epigenético",
       "features": [
         "Análisis nutricional básico (30 marcadores)",
-        "Identificación de intolerancias alimentarias", 
+        "Identificación de intolerancias alimentarias",
         "Plan alimentario personalizado básico",
         "Guía de macronutrientes",
         "Reporte digital detallado"
@@ -18,7 +18,7 @@
       "cta": "Consultar vía WhatsApp"
     },
     {
-      "id": "wellness", 
+      "id": "wellness",
       "title": "Wellness",
       "subtitle": "Completo",
       "price": "L. 4,200",
@@ -37,7 +37,7 @@
     },
     {
       "id": "beauty",
-      "title": "Beauty", 
+      "title": "Beauty",
       "subtitle": "Piel y Cabello",
       "price": "L. 5,800",
       "originalPrice": null,
@@ -71,7 +71,7 @@
       "answer": "El análisis completo toma 7 días hábiles desde que recibimos tu muestra en el laboratorio certificado. Recibes tu reporte detallado por email y programamos una consulta de explicación personalizada sin costo adicional."
     },
     {
-      "id": "vs-genetic-test", 
+      "id": "vs-genetic-test",
       "question": "¿Es lo mismo que un test genético tradicional?",
       "answer": "No. Los tests genéticos analizan tu ADN (que no cambia durante tu vida), mientras que la epigenética analiza cómo tus genes se expresan actualmente según tu estilo de vida, nutrición y ambiente. Es información más práctica y modificable."
     },
@@ -94,14 +94,14 @@
       "icon": "✂️"
     },
     {
-      "id": "analysis", 
+      "id": "analysis",
       "title": "Análisis en laboratorio certificado",
       "description": "Tecnología de última generación analiza más de 90 marcadores epigenéticos relacionados con nutrición y metabolismo.",
       "icon": "🔬"
     },
     {
       "id": "results",
-      "title": "Recibe tu reporte y plan nutricional", 
+      "title": "Recibe tu reporte y plan nutricional",
       "description": "Reporte personalizado con recomendaciones específicas de alimentación, suplementación y estilo de vida.",
       "icon": "📊"
     }
@@ -116,7 +116,7 @@
       "plan": "Wellness"
     },
     {
-      "id": "carlos-andrade", 
+      "id": "carlos-andrade",
       "name": "Carlos Andrade",
       "age": 29,
       "location": "Tegucigalpa (Online)",
@@ -125,7 +125,7 @@
     },
     {
       "id": "andrea-soto",
-      "name": "Andrea Soto", 
+      "name": "Andrea Soto",
       "age": 42,
       "location": "San Pedro Sula (Online)",
       "testimonial": "Mi piel mejoró notablemente siguiendo las recomendaciones del reporte Beauty. Vale cada peso invertido.",

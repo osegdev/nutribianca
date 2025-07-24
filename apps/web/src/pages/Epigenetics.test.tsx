@@ -7,9 +7,7 @@ import Epigenetics from './Epigenetics';
 const renderWithProviders = (ui: React.ReactElement) => {
   return render(
     <HelmetProvider>
-      <BrowserRouter>
-        {ui}
-      </BrowserRouter>
+      <BrowserRouter>{ui}</BrowserRouter>
     </HelmetProvider>
   );
 };
@@ -38,7 +36,7 @@ describe('Epigenetics Page', () => {
     renderWithProviders(<Epigenetics />);
     const whatsappButtons = screen.getAllByText(/Consultar vía WhatsApp/);
     expect(whatsappButtons.length).toBeGreaterThan(0);
-    
+
     whatsappButtons.forEach(button => {
       const link = button.closest('a');
       expect(link).toHaveAttribute('href', 'https://wa.me/50432177256');
@@ -70,7 +68,9 @@ describe('Epigenetics Page', () => {
 
   it('renders disclaimer section', () => {
     renderWithProviders(<Epigenetics />);
-    expect(screen.getByText(/La prueba epigenética es un complemento nutricional/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/La prueba epigenética es un complemento nutricional/)
+    ).toBeInTheDocument();
     expect(screen.getByText(/Santa Rosa de Copán y modalidad online/)).toBeInTheDocument();
   });
 

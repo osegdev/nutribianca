@@ -7,13 +7,13 @@ describe('FAQ Component', () => {
     {
       id: 'faq1',
       question: 'Question 1?',
-      answer: 'Answer 1'
+      answer: 'Answer 1',
     },
     {
       id: 'faq2',
-      question: 'Question 2?', 
-      answer: 'Answer 2'
-    }
+      question: 'Question 2?',
+      answer: 'Answer 2',
+    },
   ];
 
   it('renders default title and subtitle', () => {
@@ -50,10 +50,10 @@ describe('FAQ Component', () => {
   it('hides answer when clicked again', () => {
     render(<FAQ faqs={defaultFaqs} />);
     const question1 = screen.getByText('Question 1?');
-    
+
     fireEvent.click(question1);
     expect(screen.getByText('Answer 1')).toBeVisible();
-    
+
     fireEvent.click(question1);
     expect(screen.queryByText('Answer 1')).not.toBeVisible();
   });
@@ -62,10 +62,10 @@ describe('FAQ Component', () => {
     render(<FAQ faqs={defaultFaqs} />);
     const question1 = screen.getByText('Question 1?');
     const question2 = screen.getByText('Question 2?');
-    
+
     fireEvent.click(question1);
     fireEvent.click(question2);
-    
+
     expect(screen.getByText('Answer 1')).toBeVisible();
     expect(screen.getByText('Answer 2')).toBeVisible();
   });
@@ -74,10 +74,10 @@ describe('FAQ Component', () => {
     render(<FAQ faqs={defaultFaqs} />);
     const button1 = screen.getByRole('button', { name: /Question 1/ });
     const button2 = screen.getByRole('button', { name: /Question 2/ });
-    
+
     expect(button1).toHaveAttribute('aria-expanded', 'false');
     expect(button2).toHaveAttribute('aria-expanded', 'false');
-    
+
     fireEvent.click(button1);
     expect(button1).toHaveAttribute('aria-expanded', 'true');
   });

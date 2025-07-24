@@ -38,7 +38,7 @@ describe('PlanCard Component', () => {
     expect(screen.getByText('Feature 1')).toBeInTheDocument();
     expect(screen.getByText('Feature 2')).toBeInTheDocument();
     expect(screen.getByText('Feature 3')).toBeInTheDocument();
-    
+
     const checkmarks = screen.getAllByText('✓');
     expect(checkmarks).toHaveLength(3);
   });

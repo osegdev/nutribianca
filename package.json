@@ -1,7 +1,10 @@
 {
   "name": "nutribianca",
   "private": true,
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
@@ -11,6 +14,9 @@
     "type-check": "turbo type-check"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
     "zod": "^4.0.5"
   },
   "devDependencies": {

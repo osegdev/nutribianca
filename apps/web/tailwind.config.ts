@@ -2,9 +2,9 @@ import type { Config } from 'tailwindcss';
 
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "../../packages/ui/src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    '../../packages/ui/src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -36,14 +36,14 @@ export default {
         neutral: {
           50: '#F8F9FA', // Fondo claro
           900: '#4A4A4A', // Texto principal
-        }
+        },
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
       borderRadius: {
-        'brand': '8px',
-      }
+        brand: '8px',
+      },
     },
   },
   plugins: [],

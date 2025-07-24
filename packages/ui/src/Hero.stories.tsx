@@ -22,7 +22,8 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     headline: 'Tu salud, guiada por la evidencia',
-    subheadline: 'Consultas nutricionales en Santa Rosa de Copán y online, personalizadas a tus necesidades',
+    subheadline:
+      'Consultas nutricionales en Santa Rosa de Copán y online, personalizadas a tus necesidades',
     ctaText: 'Chat en WhatsApp',
     ctaHref: 'https://wa.me/50432177256',
   },

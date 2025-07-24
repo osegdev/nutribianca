@@ -1,13 +1,16 @@
 # WSL2 Development Environment Setup
 
 ## Objetivo
+
 Configurar WSL2 + Ubuntu para desarrollar el monorepo NutriBianca sin fricción.
 
 ## Requisitos Previos
+
 - Windows 10/11 con WSL2 habilitado
 - Docker Desktop instalado con integración WSL2
 
 ## Instalación Automática
+
 ```bash
 # Clonar repositorio y ejecutar setup
 git clone https://github.com/osegdev/nutribianca.git
@@ -16,6 +19,7 @@ cd nutribianca
 ```
 
 ## Verificación del Entorno
+
 ```bash
 # Probar todas las herramientas
 docker run hello-world
@@ -25,6 +29,7 @@ rg --version && fzf --version && batcat --version
 ```
 
 ## Herramientas Instaladas
+
 - **Node.js 18** + pnpm (vía Volta)
 - **Deno 2.3+** (runtime para API)
 - **Docker** (contenedores)
@@ -33,6 +38,7 @@ rg --version && fzf --version && batcat --version
 - **ripgrep, fzf, bat** (productividad)
 
 ## Solución de Problemas
+
 - Si `bat` no funciona, usar `batcat`
 - Recargar shell: `source ~/.bashrc`
 - Docker: verificar integración WSL2 en Docker Desktop

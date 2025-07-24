@@ -22,17 +22,17 @@ export const Hero: React.FC<HeroProps> = ({
   overlay = false,
   className = '',
 }) => {
-  const backgroundStyle = backgroundImage 
-    ? { 
+  const backgroundStyle = backgroundImage
+    ? {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      } 
+        backgroundRepeat: 'no-repeat',
+      }
     : undefined;
 
   return (
-    <section 
+    <section
       className={`relative py-20 px-4 ${backgroundImage ? 'bg-gray-900' : 'bg-gradient-to-br from-primary-50 to-secondary-50'} ${className}`}
       style={backgroundStyle}
     >
@@ -46,14 +46,18 @@ export const Hero: React.FC<HeroProps> = ({
               {tagline}
             </div>
           )}
-          <h1 className={`text-4xl md:text-6xl font-bold mb-6 leading-tight ${backgroundImage ? 'text-white' : 'text-neutral-900'}`}>
+          <h1
+            className={`text-4xl md:text-6xl font-bold mb-6 leading-tight ${backgroundImage ? 'text-white' : 'text-neutral-900'}`}
+          >
             {headline}
           </h1>
-          <p className={`text-lg md:text-xl mb-8 leading-relaxed ${backgroundImage ? 'text-gray-100' : 'text-neutral-600'}`}>
+          <p
+            className={`text-lg md:text-xl mb-8 leading-relaxed ${backgroundImage ? 'text-gray-100' : 'text-neutral-600'}`}
+          >
             {subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
+            <Button
               href={ctaHref}
               variant="primary"
               size="lg"

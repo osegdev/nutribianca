@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 export const Navigation: React.FC = () => {
   const location = useLocation();
-  
+
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200">
       <div className="container mx-auto max-w-7xl px-4">
@@ -13,13 +13,13 @@ export const Navigation: React.FC = () => {
               NutriBianca
             </Link>
           </div>
-          
+
           <div className="flex space-x-8">
             <Link
               to="/"
               className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                location.pathname === '/' 
-                  ? 'text-primary-600 bg-primary-50' 
+                location.pathname === '/'
+                  ? 'text-primary-600 bg-primary-50'
                   : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
               }`}
             >
@@ -28,15 +28,15 @@ export const Navigation: React.FC = () => {
             <Link
               to="/epigenetica"
               className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                location.pathname === '/epigenetica' 
-                  ? 'text-primary-600 bg-primary-50' 
+                location.pathname === '/epigenetica'
+                  ? 'text-primary-600 bg-primary-50'
                   : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
               }`}
             >
               Pruebas Epigenéticas
             </Link>
           </div>
-          
+
           <div>
             <a
               href="https://wa.me/50432177256"

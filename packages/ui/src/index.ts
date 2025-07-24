@@ -6,4 +6,6 @@ export { Testimonials, type TestimonialsProps, type Testimonial } from './Testim
 export { PlanCard, type PlanCardProps } from './PlanCard';
 export { Steps, type StepsProps, type Step } from './Steps';
 export { FAQ, type FAQProps, type FAQItem } from './FAQ';
+export { BlogCard, type BlogCardProps } from './BlogCard';
+export { SearchInput, type SearchInputProps } from './SearchInput';
 export * from './Button';
